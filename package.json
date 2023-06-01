@@ -1,0 +1,29 @@
+{
+  "name": "food_delivery_app_api",
+  "version": "1.0.0",
+  "description": "1. **post** `api/user/register` --> This endpoint will allow users to register.\r 2. **post** `/api/user/login` --> This endpoint will allow users to login. Return JWT token on login.\r 3. **patch** `/api/user/:id/reset`\t-->This endpoint will allow users to reset the password identified by user id, providing the current password and new password in the body.\r 4. **get** `/api/restaurants` --> \tThis endpoint will return a list of all available restaurants.\r 5. **get** `/api/restaurants/:id` --> \tThis endpoint will return the details of a specific restaurant identified by its ID.\r 6. **get** `/api/restaurants/:id/menu` --> \tThis endpoint will return the menu of a specific restaurant identified by its ID.\r 7. **post** `/api/restaurants/:id/menu` --> \tThis endpoint will allow the user to add a new item to a specific restaurants menu identified by it id.\r 8. **delete** `/api/restaurants/:id/menu/:id` --> \tThis endpoint will allow the user to delete a particular menu item identified by its id from a specific restaurant.\r 9. **post** `/api/orders` --> This endpoint will allow the user to place an order.\r 10. **GET** `/api/orders/:id` --> This endpoint WILL return the details of a specific order identified by its ID.\r 11. **patch** `/api/orders/:id` --> This endpoint should allow users to update the status of a specific order identified by its ID.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAJKUMARSHRIVASH/Food_Delivery_app_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAJKUMARSHRIVASH/Food_Delivery_app_API/issues"
+  },
+  "homepage": "https://github.com/RAJKUMARSHRIVASH/Food_Delivery_app_API#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.1.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
